@@ -151,7 +151,6 @@
         <!--Menu Table View Controller-->
         <scene sceneID="vec-bJ-xxU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qAK-o2-gDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="QXh-Jv-x3J" customClass="MenuTableViewController" customModule="OrderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Vbc-dR-Fdt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -193,6 +192,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="ZWV-p2-PAY"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAK-o2-gDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1404" y="-550"/>
         </scene>
@@ -312,6 +312,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6HP-dR-Ux4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f8h-dO-K4f">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
