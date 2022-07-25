@@ -8,6 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+
+    @IBOutlet var albumImageView: UIImageView!
+    @IBOutlet var reverseBackground: UIView!
+    @IBOutlet var playPauseBackground: UIView!
+    @IBOutlet var forwardBackground: UIView!
+    @IBOutlet var reverseButton: UIButton!
+    @IBOutlet var playPauseButton: UIButton!
+    @IBOutlet var forwardButton: UIButton!
     
     var isPlaying: Bool = true {
         didSet {
@@ -23,25 +31,7 @@ class ViewController: UIViewController {
             view?.clipsToBounds = true
             view?.alpha = 0.0
         }
-        
-        /*reverseBackground.layer.cornerRadius = reverseBackground.frame.height / 2
-        reverseBackground.clipsToBounds = true
-        
-        playPauseBackground.layer.cornerRadius = playPauseBackground.frame.height / 2
-        playPauseBackground.clipsToBounds = true
-        
-        forwardBackground.layer.cornerRadius = forwardBackground.frame.height / 2
-        forwardBackground.clipsToBounds = true
-        */
     }
-
-    @IBOutlet var albumImageView: UIImageView!
-    @IBOutlet var reverseBackground: UIView!
-    @IBOutlet var playPauseBackground: UIView!
-    @IBOutlet var forwardBackground: UIView!
-    @IBOutlet var reverseButton: UIButton!
-    @IBOutlet var playPauseButton: UIButton!
-    @IBOutlet var forwardButton: UIButton!
     
     @IBAction func playPauseButtonTapped(_ sender: UIButton) {
         isPlaying.toggle()
@@ -99,6 +89,5 @@ class ViewController: UIViewController {
             sender.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
         }
     }
-    
 }
 
