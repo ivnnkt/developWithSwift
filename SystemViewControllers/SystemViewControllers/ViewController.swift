@@ -15,7 +15,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func shareButtonTapped(_ sender: UIButton) {
@@ -67,7 +66,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         let mailComposer = MFMailComposeViewController()
         mailComposer.mailComposeDelegate = self
-        mailComposer.setToRecipients(["inkt@bk.ru"])
+        mailComposer.setToRecipients(["mail@example.com"])
         mailComposer.setSubject("Look at this")
         mailComposer.setMessageBody("Hello, this is an email from the app I made.", isHTML: false)
         
