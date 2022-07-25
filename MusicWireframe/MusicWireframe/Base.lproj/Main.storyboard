@@ -25,21 +25,21 @@
                             </imageView>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJY-Oq-I3p" userLabel="Play Pause Background">
                                 <rect key="frame" x="185" y="480.5" width="44" height="44.5"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kJY-Oq-I3p" secondAttribute="height" multiplier="1:1" id="Xxl-KS-7vd"/>
                                 </constraints>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wld-t3-Ie6" userLabel="Reverse Background">
                                 <rect key="frame" x="83.5" y="480.5" width="44.5" height="44.5"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Wld-t3-Ie6" secondAttribute="height" multiplier="1:1" id="8qD-R7-Pkj"/>
                                 </constraints>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGS-jd-vCJ" userLabel="Forward Background">
                                 <rect key="frame" x="286" y="480.5" width="44.5" height="44.5"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eGS-jd-vCJ" secondAttribute="height" multiplier="1:1" id="TPJ-dl-xz8"/>
                                 </constraints>
@@ -138,8 +138,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
