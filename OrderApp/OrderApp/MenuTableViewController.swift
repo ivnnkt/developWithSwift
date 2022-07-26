@@ -10,6 +10,8 @@ import UIKit
 @MainActor
 class MenuTableViewController: UITableViewController {
     
+    // MARK: - Properties
+    
     let category: String
     var menuItems = [MenuItem]()
     var imageLoadTasks: [IndexPath: Task<Void, Never>] = [:]
@@ -23,6 +25,8 @@ class MenuTableViewController: UITableViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = category.capitalized

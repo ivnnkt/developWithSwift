@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Define RoomType model
 struct RoomType: Equatable {
     var id: Int
     var name: String

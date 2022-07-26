@@ -9,6 +9,7 @@ import Foundation
 
 // Define Order model
 struct Order: Codable {
+    
     var menuItems: [MenuItem]
     
     init(menuItems: [MenuItem] = []) {

@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Define Registration model
 struct Registration {
     var firstName: String
     var lastName: String

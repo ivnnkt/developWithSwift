@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 // MARK: - network requests
+
 class MenuController {
 
     static let shared = MenuController()

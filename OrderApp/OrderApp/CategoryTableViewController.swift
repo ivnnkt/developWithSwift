@@ -10,8 +10,12 @@ import UIKit
 @MainActor
 class CategoryTableViewController: UITableViewController {
     
+    // MARK: - Properties
+    
     var categories = [String]()
 
+    // MARK: - Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
