@@ -9,6 +9,8 @@ import UIKit
 
 class OrderConfirmationViewController: UIViewController {
     
+    // MARK: - Properties
+    
     let minuteToPrepare: Int
     
     @IBOutlet weak var confirmationLabel: UILabel!
@@ -22,6 +24,8 @@ class OrderConfirmationViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()

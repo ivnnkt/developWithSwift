@@ -9,9 +9,13 @@ import UIKit
 
 class OrderTableViewController: UITableViewController {
     
+    // MARK: - Properties
+    
     var minutesToPrepareOreder = 0
     var imageLoadTasks: [IndexPath: Task<Void, Never>] = [:]
 
+    // MARK: - Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = editButtonItem

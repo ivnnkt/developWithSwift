@@ -9,6 +9,9 @@ import Foundation
 import UIKit
 
 class MenuItemCell: UITableViewCell {
+    
+    // MARK: - Properties
+    
     var itemName: String? = nil
     {
         didSet {
@@ -35,6 +38,8 @@ class MenuItemCell: UITableViewCell {
             }
         }
     }
+    
+    // MARK: - Methods
     
     override func updateConfiguration(using state: UICellConfigurationState) {
         var content = defaultContentConfiguration().updated(for: state)

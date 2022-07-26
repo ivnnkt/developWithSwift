@@ -10,6 +10,8 @@ import UIKit
 @MainActor
 class MenuItemDetailViewController: UIViewController {
     
+    // MARK: - Properties
+    
     @IBOutlet weak var nameLable: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var priceLable: UILabel!
@@ -26,6 +28,8 @@ class MenuItemDetailViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +48,8 @@ class MenuItemDetailViewController: UIViewController {
         }
     }
 
+    // MARK: - Actions
+    
     @IBAction func orderButtonTapped(_ sender: UIButton) {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.1, options: [], animations: {
             self.addToOrderButton.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)

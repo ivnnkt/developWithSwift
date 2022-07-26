@@ -13,10 +13,14 @@ protocol SelectRoomTypeTableViewControllerDelegate: AnyObject {
 
 class SelectRoomTypeTableViewController: UITableViewController {
     
+    // MARK: - Properties
+    
     weak var delegate: SelectRoomTypeTableViewControllerDelegate?
     
     var roomType: RoomType?
 
+    // MARK: - Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

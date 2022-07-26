@@ -9,8 +9,12 @@ import UIKit
 
 class RegistrationTableViewController: UITableViewController {
     
+    // MARK: - Properties
+    
     var registrations: [Registration] = []
 
+    // MARK: - Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -36,6 +40,8 @@ class RegistrationTableViewController: UITableViewController {
 
         return cell
     }
+    
+    // MARK: - Actions
     
     @IBAction func unwindFromAddRegistration(unwindSegue: UIStoryboardSegue) {
         

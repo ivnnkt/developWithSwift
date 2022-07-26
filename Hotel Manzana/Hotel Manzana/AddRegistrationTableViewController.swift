@@ -9,6 +9,25 @@ import UIKit
 
 class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeTableViewControllerDelegate {
     
+    // MARK: - Properties
+    
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var checkInDateLable: UILabel!
+    @IBOutlet weak var checkInDatePicker: UIDatePicker!
+    @IBOutlet weak var checkOutDateLable: UILabel!
+    @IBOutlet weak var checkOutDatePicker: UIDatePicker!
+    
+    @IBOutlet weak var numberOfAdultsLable: UILabel!
+    @IBOutlet weak var numberOfAdultsStepper: UIStepper!
+    @IBOutlet weak var numberOfChildrenLanble: UILabel!
+    @IBOutlet weak var numberOfChildrenStepper: UIStepper!
+    
+    @IBOutlet weak var wifiSwitch: UISwitch!
+    
+    @IBOutlet weak var roomTypeLable: UILabel!
     
     var roomType: RoomType?
     
@@ -52,47 +71,7 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
         }
     }
     
-    @IBOutlet weak var firstNameTextField: UITextField!
-    @IBOutlet weak var lastNameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    
-    @IBOutlet weak var checkInDateLable: UILabel!
-    @IBOutlet weak var checkInDatePicker: UIDatePicker!
-    @IBOutlet weak var checkOutDateLable: UILabel!
-    @IBOutlet weak var checkOutDatePicker: UIDatePicker!
-    
-    @IBOutlet weak var numberOfAdultsLable: UILabel!
-    @IBOutlet weak var numberOfAdultsStepper: UIStepper!
-    @IBOutlet weak var numberOfChildrenLanble: UILabel!
-    @IBOutlet weak var numberOfChildrenStepper: UIStepper!
-    
-    @IBOutlet weak var wifiSwitch: UISwitch!
-    
-    @IBOutlet weak var roomTypeLable: UILabel!
-    
-    @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
-        updateDateViews()
-    }
-    
-    @IBAction func stepperValueChenged(_ sender: UIStepper) {
-        updateNumberOfGuests()
-    }
-    
-    @IBAction func wifiSwitchChanged(_ sender: UISwitch) {
-    }
-    
-    @IBAction func cancelButtonTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
-    @IBSegueAction func selectRoomType(_ coder: NSCoder) -> SelectRoomTypeTableViewController? {
-        let selectRoomTypeController = SelectRoomTypeTableViewController(coder: coder)
-        selectRoomTypeController?.delegate = self
-        selectRoomTypeController?.roomType = roomType
-        
-        return selectRoomTypeController
-    }
+    // MARK: - Methods
     
     func updateDateViews() {
         checkOutDatePicker.minimumDate = Calendar.current.date(byAdding: .day, value: 1, to: checkOutDatePicker.date)
@@ -161,5 +140,31 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
         tableView.beginUpdates()
         tableView.endUpdates()
         
+    }
+    
+    // MARK: - Actions and SegueActions
+    
+    @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
+        updateDateViews()
+    }
+    
+    @IBAction func stepperValueChenged(_ sender: UIStepper) {
+        updateNumberOfGuests()
+    }
+    
+    @IBAction func wifiSwitchChanged(_ sender: UISwitch) {
+    }
+    
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBSegueAction func selectRoomType(_ coder: NSCoder) -> SelectRoomTypeTableViewController? {
+        let selectRoomTypeController = SelectRoomTypeTableViewController(coder: coder)
+        selectRoomTypeController?.delegate = self
+        selectRoomTypeController?.roomType = roomType
+        
+        return selectRoomTypeController
     }
 }
