@@ -8,3 +8,4 @@ iOS app development with books: Develop in Swift. Fundamentals, Develop in Swift
 5. SpacePhoto - the simple app to try working with Web by API.
 6. MusicWireframe - the simple app to try animation
 7. OrderApp - the client-server app.
+8. networking - the client-server app (https://jsonplaceholder.typicode.com was used as a server) in this app I tried to use one of the best networking practices.
