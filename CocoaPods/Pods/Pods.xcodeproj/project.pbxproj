@@ -1,0 +1,1089 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0582FDB5BCFC36CA937529C9F842408E /* PresentationSpringProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821A853367B84F0110F5071DF156E14 /* PresentationSpringProvider.swift */; };
+		05F9FB633B239E485F01D601AECA6E2F /* LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2517F5CA43474B1B5E725698BF88D55 /* LTMorphingLabel.swift */; };
+		095ED489B6740CD4239B6A172BDFA50D /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4889CB10C944EB033CCDA36F4B57283 /* Presentation.swift */; };
+		0AE8606A6DA00F2166C23DDB78493AC4 /* PresentationAnimatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE21C6AA97A1FEA53B23C60B6C02078 /* PresentationAnimatorProvider.swift */; };
+		0E60F7FB92BE03B0DFC74AD3CDB50BE7 /* LTMorphingLabel+Sparkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E383E1EA4ABD8CD4A88CA3CB6460E431 /* LTMorphingLabel+Sparkle.swift */; };
+		11B7D9594006964858CF355EF18BD8DC /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788F6D553B9228BDDB83521E8D68F5EC /* Size.swift */; };
+		11DD09F60B8553BCF5A9E558FAD36CA5 /* PresentationAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9A0C0A225195D4F22BEBC9093D306 /* PresentationAlignment.swift */; };
+		15925F500F9F3C8F9E3C02F4B087AF71 /* VerticalAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45727997EFD3C421D9185FF8266CE9B /* VerticalAlignment.swift */; };
+		1991EDF2C64D1428D72EAFE7DAFB5D83 /* InteractionConfigurationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7AA8EE0EB1334E0BD588B542B28C7A /* InteractionConfigurationProvider.swift */; };
+		1C0A38BC989105616B195B414FA0F39E /* BackgroundStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210E447C2D8C8F01E07FAD424001C1B1 /* BackgroundStyle.swift */; };
+		1EFCE5352F3D3295BAF50769C0E789E0 /* PresentationTimingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB303F905A301E4FC108CFCA90D0BA2 /* PresentationTimingProtocol.swift */; };
+		22A16FB1168D7EFED59AD441317F3C88 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A263DD12DE8D79C335DC38F06AEE261 /* Direction.swift */; };
+		24DD55A150E75FBD793EE946683582F3 /* CombinedTimingCurveProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF1AAF8B99D376C1C16146620C7024 /* CombinedTimingCurveProvider.swift */; };
+		2539789F7BB1F60677239DE9AFC6D658 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
+		2CF727C8783657440270F9B56B2E6257 /* PresentationHeightProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A360FA05CFDC3A1BF9C5E3A77307D7 /* PresentationHeightProvider.swift */; };
+		337AD1E8F55EBC4CB49D325932849C66 /* ViewControllerSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F31FB2AD75A29F777F91061B8F7D5 /* ViewControllerSizeCalculator.swift */; };
+		33D8B85B84C0EA8292CAF04BE02EBD61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99101C4ADCB227073FF8992698698056 /* Constants.swift */; };
+		343EA4DDA39088744BFC8D4F9394D5F2 /* Pods-CocoaPods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A46113E7D2B284418FDFBE5411379B11 /* Pods-CocoaPods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C98F88F43ED840BEE05B6A15A33AB43 /* LTCharacterDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EE5AF640F1AFD407236748E45B68BD /* LTCharacterDiffResult.swift */; };
+		40817CB50941BC6979D586DE507624C9 /* Pods-CocoaPods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2FDB2AD982F5330254B87EC6FBAC9F /* Pods-CocoaPods-dummy.m */; };
+		40DDACE14CE2C8F5D9114EB8618E5173 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C5AC2152DAE70D5C4BDE468D4497C1 /* Spring.swift */; };
+		411C1E70E700877983DF3BD19871AE83 /* PresentationMarginGuardsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488AAA0FE68E0BDB023F2FAA94648B6 /* PresentationMarginGuardsProvider.swift */; };
+		4556C09111DFEC86B71688FBA2A80AC1 /* Fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 4437F947A52643EC223792032CBF53A5 /* Fire.png */; };
+		4FDC4DB2BFCDCECF3CD1DD4AD1151E6E /* LTMorphingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C10F2F9B63E7415274D6FA2700387F /* LTMorphingEffect.swift */; };
+		53B40877005BE473A1BEE043C1883E61 /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = F569F542F13FE2DF84689C804587078F /* Smoke.png */; };
+		5619946FB317E23FACEE53974C0744C5 /* LTMorphingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6617A178919BF88B04456631C2CE1CE /* LTMorphingLabel-dummy.m */; };
+		58A4C1F9ADF7266E75BD3075176C2B47 /* PresentationAlignmentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B7435CB6D5AE1537C4728F67FECC3 /* PresentationAlignmentProvider.swift */; };
+		590C41931EADF309902E91207BE7C517 /* PresentationSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8512AF4801D55CB246DAB40D3B8CA /* PresentationSize.swift */; };
+		5D062590800F6888D6A8219525CC7517 /* LTStringDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FF759400B8E415A61E76DB19400B99 /* LTStringDiffResult.swift */; };
+		5EFBDE53F23A59F446A1A8C5046E1BFE /* Jelly-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F82D58459995DCA665D3914928E339DA /* Jelly-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6240252898433DF3FF9FB057FA1CA827 /* Direction+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D39537E55F6971E11DB54CEB89AEEE /* Direction+Orientation.swift */; };
+		63535EDAC39BCD8CEAFF4221E4C8DAF9 /* PresentationTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3A13890DA173DA7CDBCA2F04E7C4A /* PresentationTiming.swift */; };
+		6354BF050131D8A69D79AC97CE299E69 /* LTCharacterLimbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AE093CBC4FC9018F0885F38F84D661 /* LTCharacterLimbo.swift */; };
+		6B7DDA89E1307A42C192C4D3F7B0C101 /* LiveUpdateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7066A5567881B1D2DD385CB2B1032DB5 /* LiveUpdateError.swift */; };
+		6C0E0D1F17C861F79E4E647CD089BE25 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD65993B311F51E37DBF640F44B9700C /* Orientation.swift */; };
+		6D8C3CA4092398983AD2C9AF4F81753F /* Direction+EdgeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA773BB1218AEF9793E3C3CF78455A99 /* Direction+EdgeHelper.swift */; };
+		704494997F5F13A72A8DF65351F93452 /* LTMorphingLabel+Anvil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7CCD69D148A5B788EF95433A6AF940 /* LTMorphingLabel+Anvil.swift */; };
+		71C9FFCE97E47224660DD3D054CB5CB6 /* InteractionMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BE9ABCD0C70990D12B4F01BDEF4DA4 /* InteractionMode.swift */; };
+		734FC4A4BA723BF6CECE26C717E918DA /* PresentationSingleSizeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95351ED45FDCFAB193EA805AEA3BA683 /* PresentationSingleSizeProvider.swift */; };
+		7A893026937CB10C2550BE7F18CB9D48 /* Deprecation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6C8E03E066906BDADE031C81A24101 /* Deprecation.swift */; };
+		7D9C47B129EA77ACF69FC5A67217367D /* LTEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE99847A977A2E4CD7116E3C6EB5567 /* LTEasing.swift */; };
+		7FFE59A21E16EBD5C6CF197F55707F57 /* PresentationWidthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A11EBD8FBF9193354FF47C730412AC4 /* PresentationWidthProvider.swift */; };
+		81BE96F1C87C3CF46044341BD4583F6D /* PresentationUIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794182A6B98E335E0703CB54F3F36AE2 /* PresentationUIConfiguration.swift */; };
+		8857FD0B4987A603556ECD63B469812D /* LTMorphingLabel+Pixelate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016852B9FFC0FB04B8C779BEFB3CA9F7 /* LTMorphingLabel+Pixelate.swift */; };
+		887D87DFC268901E6544E06A9A92168D /* PresentationSizeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE5C6500D08F24F723A88F708EFF8AF /* PresentationSizeProvider.swift */; };
+		8AEEFB20CE0BF414FCC334D5BD3FAE9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
+		8D33791C687F487760ECA38DFED2F148 /* Size+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7742343728535B5A62BCE31511D4652 /* Size+Equatable.swift */; };
+		8D6ECC294090B63BA765BACEC1221A9F /* SlidePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE853D15569E611B55FFA0E862FC27 /* SlidePresentation.swift */; };
+		8E20B3E17BD9456F100D5A59FB21F394 /* PresentationUIConfigurationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF5CC0B01DEB48E28BDEC04A3B91B44 /* PresentationUIConfigurationProvider.swift */; };
+		8EADDA29ECB74C60A2FE192AB900DE58 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */; };
+		907CA5C33ECFE28AA3AF50995F5FA91D /* LTMorphingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F543E8835E59D2F8A57E5B504F8CD9 /* LTMorphingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9507728B497C72281A6478C92E314F66 /* LTMorphingLabel+Evaporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AECC574EA2DAE5DD2B0BACD1C8DA138 /* LTMorphingLabel+Evaporate.swift */; };
+		9B3A729139AB19C7ECA1EA604D964375 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E169C50832075301F2B6061523116 /* Animator.swift */; };
+		9DA31D1D003C2945F4BFF8F0D12A8AE1 /* PresentationDirectionShowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E86640051BACD2FDA6D92FC8C77B92 /* PresentationDirectionShowProvider.swift */; };
+		A2BCE579FB8CDB8D39E3845740CACB6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
+		A3704EBE8E333280224FA342C178072B /* UIViewControllerAnimatedTransitioning+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94524532D463C250DA8E5743EB5A7248 /* UIViewControllerAnimatedTransitioning+Convenience.swift */; };
+		A5697D2D7D037B24B1439054E97FC009 /* LTEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815F099E3C4F90BA0C17B2BAAFCD5B4 /* LTEmitterView.swift */; };
+		A6C896CBD6AB4DA5E10369EAE910A1B8 /* LTMorphingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0C8B0E73A186D78944A9976189FDF5A /* LTMorphingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF00D622DE681EC50D491D55CF9A7DD0 /* CoverPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7BB92D347827D54B828CF7D6F5A701 /* CoverPresentation.swift */; };
+		B215D9357706C5F485A04ECF09C66E97 /* FadePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D43940B4756014983BC4F969F85F8F /* FadePresentation.swift */; };
+		B441F46E4E3566BC30F8CE4EB841C792 /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C49C7C8F37074739852CDDE28896BF5 /* Fragment.png */; };
+		B7BFA98E7A19D6691342C8165FE2F2AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */; };
+		B93B233E217199DABF95DCBC76BD23E9 /* PresentationSizeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C4B2D6212F4D08883E267286F29CF /* PresentationSizeProtocol.swift */; };
+		BC48CDAD8DB34CA67EC38B3FBD852F9E /* PresentationTimingInformationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244DB4061797E8BDEC8266E9A493127F /* PresentationTimingInformationProvider.swift */; };
+		BC6F3A12F6EE17E03560742B6BC2731C /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = 453316CE8CFD55C93BBC33A6703BECB1 /* Sparkle.png */; };
+		BDCC7890FBA671224841C70F7828F6C4 /* PresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75E49E264B7F8EB46EF45FEFA0860E4 /* PresentationType.swift */; };
+		BF755AF4E8CF6B5928AE3657891659C4 /* LTMorphingLabel+Fall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54CF60600492D0015F3344FA9C6779 /* LTMorphingLabel+Fall.swift */; };
+		CC3FE2BFC189D42744199C76783F7087 /* LTMorphingLabel+Burn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A026DE46C9757CEB4E22D9FC1425B5 /* LTMorphingLabel+Burn.swift */; };
+		D1F16550F99EFFC0C96C6E6216A1BDC1 /* HorizontalAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BED6B18CF96F26191F23A79BF156821 /* HorizontalAlignment.swift */; };
+		D545A1DE70DEE4282F055F7627725471 /* AnimationCurve+AnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72CA81C1ED954DCD4076A1160B3D58 /* AnimationCurve+AnimationOptions.swift */; };
+		D6643618DB5CB6F1E96F95067A0439C3 /* FadeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F98B22B105D905EE8BBA840357F02A /* FadeAnimator.swift */; };
+		D76C1D3D5D0915FBAA9D79F8F40A681D /* CoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81B0B48064F036A56817E1551A5F71 /* CoverAnimator.swift */; };
+		DB2CDA97AB034354500CB1D38A608AB8 /* InteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F041199C261ADAB2CE2D67AFE5AC999 /* InteractionController.swift */; };
+		DB95D4D0DB5161577A694780CDF30F78 /* Spring+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4A82F72DBE901959DB61139C2E8D8 /* Spring+Values.swift */; };
+		E053C5257FC0C30E41AC5AF0A6BFDDC3 /* PresentationDirectionDismissProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1E9558B41769B7D003B9D4B99E552C /* PresentationDirectionDismissProvider.swift */; };
+		EBD3320442FE6EE1164029B8231E9818 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */; };
+		EDF619052F74FC01BEA22C5008FFEEB9 /* PresentationInteractiveAnimatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6FEB1941142864C2B7B47224E56D2 /* PresentationInteractiveAnimatorProvider.swift */; };
+		F057615E25FE1768F405CD96AEB7B97B /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC8DEF2BF94DF3B3FF935F7AC065D7A /* PresentationController.swift */; };
+		F63196912AFEE995EABFEF1E71FC4CBA /* Jelly-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B94B623176B203051BBCD8CBF631CD /* Jelly-dummy.m */; };
+		FA98C5FAE1D780048BA8308BEFB23ED3 /* UIView+RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C763D045253FBA607F314F94A959BE /* UIView+RoundCorners.swift */; };
+		FC055631059A979810D539A998BC2B8C /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1590526615E65851FA89E9CDD619B /* Duration.swift */; };
+		FCA85199B90D41E0375A5868B219C631 /* SlideAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467034555824B93FDCB1761D43AEC265 /* SlideAnimator.swift */; };
+		FD4FF79F1E483BC743AA398E9EDEA2D7 /* InteractionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB916F93AEE147682432533CD4578796 /* InteractionConfiguration.swift */; };
+		FD5FACC8DD09EC39D5FF909EC4B15461 /* DragMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D9DB5A11FBA342E00F09F834C7D0AB /* DragMode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A08DC092C9EDCE2775C98AE17C54ECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54C60F9B0F9BE0BE289A04A9AA3B6BB0;
+			remoteInfo = Jelly;
+		};
+		C4DA6035DB926481E69294E4847C73A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE08E97E291135F1A7FAF0D9D680D2BF;
+			remoteInfo = LTMorphingLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016852B9FFC0FB04B8C779BEFB3CA9F7 /* LTMorphingLabel+Pixelate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Pixelate.swift"; path = "LTMorphingLabel/LTMorphingLabel+Pixelate.swift"; sourceTree = "<group>"; };
+		01BE9ABCD0C70990D12B4F01BDEF4DA4 /* InteractionMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractionMode.swift; path = Jelly/Classes/public/Models/Configuration/Presentation/InteractionMode.swift; sourceTree = "<group>"; };
+		0A11EBD8FBF9193354FF47C730412AC4 /* PresentationWidthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationWidthProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationWidthProvider.swift; sourceTree = "<group>"; };
+		1A7BB92D347827D54B828CF7D6F5A701 /* CoverPresentation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverPresentation.swift; path = Jelly/Classes/public/Models/Presentations/CoverPresentation.swift; sourceTree = "<group>"; };
+		1BE5C6500D08F24F723A88F708EFF8AF /* PresentationSizeProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationSizeProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationSizeProvider.swift; sourceTree = "<group>"; };
+		1D083565E45668BC50E5C108828819FC /* LTMorphingLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LTMorphingLabel-Info.plist"; sourceTree = "<group>"; };
+		1EF89C2ADA96DB267929D5A7D3214302 /* LTMorphingLabel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LTMorphingLabel; path = LTMorphingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5B7435CB6D5AE1537C4728F67FECC3 /* PresentationAlignmentProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationAlignmentProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationAlignmentProvider.swift; sourceTree = "<group>"; };
+		210E447C2D8C8F01E07FAD424001C1B1 /* BackgroundStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundStyle.swift; path = Jelly/Classes/public/Models/Configuration/BackgroundStyle.swift; sourceTree = "<group>"; };
+		22C763D045253FBA607F314F94A959BE /* UIView+RoundCorners.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+RoundCorners.swift"; path = "Jelly/Classes/private/Extensions/UIView+RoundCorners.swift"; sourceTree = "<group>"; };
+		244DB4061797E8BDEC8266E9A493127F /* PresentationTimingInformationProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationTimingInformationProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationTimingInformationProvider.swift; sourceTree = "<group>"; };
+		265A2FB75195067C659BF051330C9BFA /* Pods-CocoaPods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CocoaPods-frameworks.sh"; sourceTree = "<group>"; };
+		2CD4A82F72DBE901959DB61139C2E8D8 /* Spring+Values.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Spring+Values.swift"; path = "Jelly/Classes/private/Extensions/Spring+Values.swift"; sourceTree = "<group>"; };
+		2D72CA81C1ED954DCD4076A1160B3D58 /* AnimationCurve+AnimationOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AnimationCurve+AnimationOptions.swift"; path = "Jelly/Classes/private/Extensions/AnimationCurve+AnimationOptions.swift"; sourceTree = "<group>"; };
+		2F7B7380627B3FB572271ED410111D8D /* Jelly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Jelly.debug.xcconfig; sourceTree = "<group>"; };
+		32EE5AF640F1AFD407236748E45B68BD /* LTCharacterDiffResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterDiffResult.swift; path = LTMorphingLabel/LTCharacterDiffResult.swift; sourceTree = "<group>"; };
+		376F31FB2AD75A29F777F91061B8F7D5 /* ViewControllerSizeCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewControllerSizeCalculator.swift; path = Jelly/Classes/private/ViewControllerSizeCalculator.swift; sourceTree = "<group>"; };
+		3A8B1B302E3BAC8F83297F6EC2F1C98C /* Jelly.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Jelly.modulemap; sourceTree = "<group>"; };
+		3F041199C261ADAB2CE2D67AFE5AC999 /* InteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractionController.swift; path = "Jelly/Classes/private/Animators/Interaction Controllers/InteractionController.swift"; sourceTree = "<group>"; };
+		3FFF1AAF8B99D376C1C16146620C7024 /* CombinedTimingCurveProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombinedTimingCurveProvider.swift; path = Jelly/Classes/private/Models/CombinedTimingCurveProvider.swift; sourceTree = "<group>"; };
+		40A026DE46C9757CEB4E22D9FC1425B5 /* LTMorphingLabel+Burn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Burn.swift"; path = "LTMorphingLabel/LTMorphingLabel+Burn.swift"; sourceTree = "<group>"; };
+		4166530461566241163502DD0BF6844C /* LTMorphingLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTMorphingLabel.release.xcconfig; sourceTree = "<group>"; };
+		4437F947A52643EC223792032CBF53A5 /* Fire.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Fire.png; path = LTMorphingLabel/Particles/Fire.png; sourceTree = "<group>"; };
+		453316CE8CFD55C93BBC33A6703BECB1 /* Sparkle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Sparkle.png; path = LTMorphingLabel/Particles/Sparkle.png; sourceTree = "<group>"; };
+		467034555824B93FDCB1761D43AEC265 /* SlideAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideAnimator.swift; path = "Jelly/Classes/private/Animators/Animated Animators/SlideAnimator.swift"; sourceTree = "<group>"; };
+		47B94B623176B203051BBCD8CBF631CD /* Jelly-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Jelly-dummy.m"; sourceTree = "<group>"; };
+		47C10F2F9B63E7415274D6FA2700387F /* LTMorphingEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingEffect.swift; path = LTMorphingLabel/LTMorphingEffect.swift; sourceTree = "<group>"; };
+		4A263DD12DE8D79C335DC38F06AEE261 /* Direction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Direction.swift; path = Jelly/Classes/public/Models/Configuration/Direction.swift; sourceTree = "<group>"; };
+		4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4BED6B18CF96F26191F23A79BF156821 /* HorizontalAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalAlignment.swift; path = Jelly/Classes/public/Models/Configuration/HorizontalAlignment.swift; sourceTree = "<group>"; };
+		4D2FDB2AD982F5330254B87EC6FBAC9F /* Pods-CocoaPods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CocoaPods-dummy.m"; sourceTree = "<group>"; };
+		5AECC574EA2DAE5DD2B0BACD1C8DA138 /* LTMorphingLabel+Evaporate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Evaporate.swift"; path = "LTMorphingLabel/LTMorphingLabel+Evaporate.swift"; sourceTree = "<group>"; };
+		62F8512AF4801D55CB246DAB40D3B8CA /* PresentationSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationSize.swift; path = Jelly/Classes/public/Models/Configuration/Presentation/PresentationSize.swift; sourceTree = "<group>"; };
+		63699376B382D96C6388AE59FCF0AFF7 /* Jelly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Jelly.release.xcconfig; sourceTree = "<group>"; };
+		6420358BF6A79DEF16B390985B127DE9 /* Pods-CocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CocoaPods.release.xcconfig"; sourceTree = "<group>"; };
+		6A1E9558B41769B7D003B9D4B99E552C /* PresentationDirectionDismissProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationDirectionDismissProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationDirectionDismissProvider.swift; sourceTree = "<group>"; };
+		6FC9A0C0A225195D4F22BEBC9093D306 /* PresentationAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationAlignment.swift; path = Jelly/Classes/public/Models/Configuration/Presentation/PresentationAlignment.swift; sourceTree = "<group>"; };
+		7066A5567881B1D2DD385CB2B1032DB5 /* LiveUpdateError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiveUpdateError.swift; path = Jelly/Classes/public/LiveUpdateError.swift; sourceTree = "<group>"; };
+		73AE093CBC4FC9018F0885F38F84D661 /* LTCharacterLimbo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterLimbo.swift; path = LTMorphingLabel/LTCharacterLimbo.swift; sourceTree = "<group>"; };
+		76FF759400B8E415A61E76DB19400B99 /* LTStringDiffResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTStringDiffResult.swift; path = LTMorphingLabel/LTStringDiffResult.swift; sourceTree = "<group>"; };
+		788F6D553B9228BDDB83521E8D68F5EC /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Jelly/Classes/public/Models/Configuration/Size.swift; sourceTree = "<group>"; };
+		794182A6B98E335E0703CB54F3F36AE2 /* PresentationUIConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationUIConfiguration.swift; path = Jelly/Classes/public/Models/Configuration/Presentation/PresentationUIConfiguration.swift; sourceTree = "<group>"; };
+		7C49C7C8F37074739852CDDE28896BF5 /* Fragment.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Fragment.png; path = LTMorphingLabel/Particles/Fragment.png; sourceTree = "<group>"; };
+		7D7CCD69D148A5B788EF95433A6AF940 /* LTMorphingLabel+Anvil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Anvil.swift"; path = "LTMorphingLabel/LTMorphingLabel+Anvil.swift"; sourceTree = "<group>"; };
+		7E54CF60600492D0015F3344FA9C6779 /* LTMorphingLabel+Fall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Fall.swift"; path = "LTMorphingLabel/LTMorphingLabel+Fall.swift"; sourceTree = "<group>"; };
+		818A93B241FD584928DD63808BCA41BD /* Pods-CocoaPods-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CocoaPods-Info.plist"; sourceTree = "<group>"; };
+		84F543E8835E59D2F8A57E5B504F8CD9 /* LTMorphingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LTMorphingLabel.h; path = LTMorphingLabel/LTMorphingLabel.h; sourceTree = "<group>"; };
+		88A360FA05CFDC3A1BF9C5E3A77307D7 /* PresentationHeightProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationHeightProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationHeightProvider.swift; sourceTree = "<group>"; };
+		893199B7202918135CAD9E052FB3502F /* LTMorphingLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTMorphingLabel.debug.xcconfig; sourceTree = "<group>"; };
+		8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		93BB1CDAA24C33DE7725550953DB11A3 /* Pods-CocoaPods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CocoaPods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93C5AC2152DAE70D5C4BDE468D4497C1 /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Jelly/Classes/public/Models/Configuration/Spring.swift; sourceTree = "<group>"; };
+		94524532D463C250DA8E5743EB5A7248 /* UIViewControllerAnimatedTransitioning+Convenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewControllerAnimatedTransitioning+Convenience.swift"; path = "Jelly/Classes/private/Extensions/UIViewControllerAnimatedTransitioning+Convenience.swift"; sourceTree = "<group>"; };
+		95351ED45FDCFAB193EA805AEA3BA683 /* PresentationSingleSizeProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationSingleSizeProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationSingleSizeProvider.swift; sourceTree = "<group>"; };
+		982EFFDF702A754B4ECA80708A71CC71 /* LTMorphingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTMorphingLabel-prefix.pch"; sourceTree = "<group>"; };
+		99101C4ADCB227073FF8992698698056 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Jelly/Classes/public/Constants.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A46113E7D2B284418FDFBE5411379B11 /* Pods-CocoaPods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CocoaPods-umbrella.h"; sourceTree = "<group>"; };
+		A5A6FEB1941142864C2B7B47224E56D2 /* PresentationInteractiveAnimatorProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationInteractiveAnimatorProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationInteractiveAnimatorProvider.swift; sourceTree = "<group>"; };
+		A5C9E01AAF42EFF307FEFBDA07A39C88 /* Pods-CocoaPods */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CocoaPods"; path = Pods_CocoaPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7742343728535B5A62BCE31511D4652 /* Size+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Size+Equatable.swift"; path = "Jelly/Classes/public/Extensions/Size+Equatable.swift"; sourceTree = "<group>"; };
+		A7F98B22B105D905EE8BBA840357F02A /* FadeAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FadeAnimator.swift; path = "Jelly/Classes/private/Animators/Animated Animators/FadeAnimator.swift"; sourceTree = "<group>"; };
+		A821A853367B84F0110F5071DF156E14 /* PresentationSpringProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationSpringProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationSpringProvider.swift; sourceTree = "<group>"; };
+		B02C4B2D6212F4D08883E267286F29CF /* PresentationSizeProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationSizeProtocol.swift; path = Jelly/Classes/public/Models/Protocols/PresentationSizeProtocol.swift; sourceTree = "<group>"; };
+		B0C8B0E73A186D78944A9976189FDF5A /* LTMorphingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTMorphingLabel-umbrella.h"; sourceTree = "<group>"; };
+		B815F099E3C4F90BA0C17B2BAAFCD5B4 /* LTEmitterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTEmitterView.swift; path = LTMorphingLabel/LTEmitterView.swift; sourceTree = "<group>"; };
+		BD7CAE9828A4C7202655EAD24B89FE3C /* Jelly-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Jelly-prefix.pch"; sourceTree = "<group>"; };
+		BEB303F905A301E4FC108CFCA90D0BA2 /* PresentationTimingProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationTimingProtocol.swift; path = Jelly/Classes/public/Models/Protocols/PresentationTimingProtocol.swift; sourceTree = "<group>"; };
+		C1E86640051BACD2FDA6D92FC8C77B92 /* PresentationDirectionShowProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationDirectionShowProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationDirectionShowProvider.swift; sourceTree = "<group>"; };
+		C4BD62F917F543F1A58DE6258AE2075A /* Pods-CocoaPods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CocoaPods-acknowledgements.plist"; sourceTree = "<group>"; };
+		C75E49E264B7F8EB46EF45FEFA0860E4 /* PresentationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationType.swift; path = Jelly/Classes/private/Models/PresentationType.swift; sourceTree = "<group>"; };
+		C8D9DB5A11FBA342E00F09F834C7D0AB /* DragMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DragMode.swift; path = Jelly/Classes/public/Models/Configuration/DragMode.swift; sourceTree = "<group>"; };
+		CC81B0B48064F036A56817E1551A5F71 /* CoverAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverAnimator.swift; path = "Jelly/Classes/private/Animators/Animated Animators/CoverAnimator.swift"; sourceTree = "<group>"; };
+		CCC845779CB5E1F102C617C32A39D42A /* Pods-CocoaPods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CocoaPods.modulemap"; sourceTree = "<group>"; };
+		CFEFB38E0166A471F6603C00EEE0264E /* Jelly-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Jelly-Info.plist"; sourceTree = "<group>"; };
+		CFF5CC0B01DEB48E28BDEC04A3B91B44 /* PresentationUIConfigurationProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationUIConfigurationProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationUIConfigurationProvider.swift; sourceTree = "<group>"; };
+		D2C7DABF4783EE4F828C456C6A52096E /* Pods-CocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
+		D5B1590526615E65851FA89E9CDD619B /* Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = Jelly/Classes/public/Models/Configuration/Duration.swift; sourceTree = "<group>"; };
+		D7D43940B4756014983BC4F969F85F8F /* FadePresentation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FadePresentation.swift; path = Jelly/Classes/public/Models/Presentations/FadePresentation.swift; sourceTree = "<group>"; };
+		DB916F93AEE147682432533CD4578796 /* InteractionConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractionConfiguration.swift; path = Jelly/Classes/public/Models/Configuration/Presentation/InteractionConfiguration.swift; sourceTree = "<group>"; };
+		DBDCD003F321F0807200E3C6DA40AC13 /* LTMorphingLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LTMorphingLabel.modulemap; sourceTree = "<group>"; };
+		DDE21C6AA97A1FEA53B23C60B6C02078 /* PresentationAnimatorProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationAnimatorProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationAnimatorProvider.swift; sourceTree = "<group>"; };
+		DEBE853D15569E611B55FFA0E862FC27 /* SlidePresentation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlidePresentation.swift; path = Jelly/Classes/public/Models/Presentations/SlidePresentation.swift; sourceTree = "<group>"; };
+		E2517F5CA43474B1B5E725698BF88D55 /* LTMorphingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingLabel.swift; path = LTMorphingLabel/LTMorphingLabel.swift; sourceTree = "<group>"; };
+		E383E1EA4ABD8CD4A88CA3CB6460E431 /* LTMorphingLabel+Sparkle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Sparkle.swift"; path = "LTMorphingLabel/LTMorphingLabel+Sparkle.swift"; sourceTree = "<group>"; };
+		E4889CB10C944EB033CCDA36F4B57283 /* Presentation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presentation.swift; path = Jelly/Classes/public/Models/Protocols/Presentation.swift; sourceTree = "<group>"; };
+		EDC8DEF2BF94DF3B3FF935F7AC065D7A /* PresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationController.swift; path = Jelly/Classes/private/PresentationController.swift; sourceTree = "<group>"; };
+		EEDBC68DA4231AD41DD66C44FAB069B7 /* Jelly */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Jelly; path = Jelly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE99847A977A2E4CD7116E3C6EB5567 /* LTEasing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTEasing.swift; path = LTMorphingLabel/LTEasing.swift; sourceTree = "<group>"; };
+		F45727997EFD3C421D9185FF8266CE9B /* VerticalAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalAlignment.swift; path = Jelly/Classes/public/Models/Configuration/VerticalAlignment.swift; sourceTree = "<group>"; };
+		F488AAA0FE68E0BDB023F2FAA94648B6 /* PresentationMarginGuardsProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationMarginGuardsProvider.swift; path = Jelly/Classes/public/Models/Protocols/PresentationMarginGuardsProvider.swift; sourceTree = "<group>"; };
+		F569F542F13FE2DF84689C804587078F /* Smoke.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Smoke.png; path = LTMorphingLabel/Particles/Smoke.png; sourceTree = "<group>"; };
+		F6617A178919BF88B04456631C2CE1CE /* LTMorphingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTMorphingLabel-dummy.m"; sourceTree = "<group>"; };
+		F6D39537E55F6971E11DB54CEB89AEEE /* Direction+Orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Direction+Orientation.swift"; path = "Jelly/Classes/private/Extensions/Direction+Orientation.swift"; sourceTree = "<group>"; };
+		F7E3A13890DA173DA7CDBCA2F04E7C4A /* PresentationTiming.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationTiming.swift; path = Jelly/Classes/public/Models/Configuration/Presentation/PresentationTiming.swift; sourceTree = "<group>"; };
+		F82D58459995DCA665D3914928E339DA /* Jelly-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Jelly-umbrella.h"; sourceTree = "<group>"; };
+		FA773BB1218AEF9793E3C3CF78455A99 /* Direction+EdgeHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Direction+EdgeHelper.swift"; path = "Jelly/Classes/private/Extensions/Direction+EdgeHelper.swift"; sourceTree = "<group>"; };
+		FC7AA8EE0EB1334E0BD588B542B28C7A /* InteractionConfigurationProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractionConfigurationProvider.swift; path = Jelly/Classes/public/Models/Protocols/InteractionConfigurationProvider.swift; sourceTree = "<group>"; };
+		FD3E169C50832075301F2B6061523116 /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Jelly/Classes/public/Animator.swift; sourceTree = "<group>"; };
+		FD65993B311F51E37DBF640F44B9700C /* Orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Orientation.swift; path = Jelly/Classes/public/Models/Configuration/Orientation.swift; sourceTree = "<group>"; };
+		FD6C8E03E066906BDADE031C81A24101 /* Deprecation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecation.swift; path = Jelly/Classes/public/Deprecation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A73E7B5426C71ED3E09DC2850216578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AEEFB20CE0BF414FCC334D5BD3FAE9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ACD5AC8FC48AEE99A7104C882E41A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2BCE579FB8CDB8D39E3845740CACB6B /* Foundation.framework in Frameworks */,
+				EBD3320442FE6EE1164029B8231E9818 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E618A29D109D3AFE39DC034F15A382D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2539789F7BB1F60677239DE9AFC6D658 /* Foundation.framework in Frameworks */,
+				8EADDA29ECB74C60A2FE192AB900DE58 /* QuartzCore.framework in Frameworks */,
+				B7BFA98E7A19D6691342C8165FE2F2AF /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0A778C0229E9BF1FD97896B93F3272B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F9F7EEE485FABF4ED3874351716E914 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE9C7DD412AA63E5827BA7E77C8C2876 /* Jelly */,
+				D144342268F18746A06DD0CE5BA0D122 /* LTMorphingLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1A8DCED9BE4739DA272E0866026EF22B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A8B1B302E3BAC8F83297F6EC2F1C98C /* Jelly.modulemap */,
+				47B94B623176B203051BBCD8CBF631CD /* Jelly-dummy.m */,
+				CFEFB38E0166A471F6603C00EEE0264E /* Jelly-Info.plist */,
+				BD7CAE9828A4C7202655EAD24B89FE3C /* Jelly-prefix.pch */,
+				F82D58459995DCA665D3914928E339DA /* Jelly-umbrella.h */,
+				2F7B7380627B3FB572271ED410111D8D /* Jelly.debug.xcconfig */,
+				63699376B382D96C6388AE59FCF0AFF7 /* Jelly.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Jelly";
+			sourceTree = "<group>";
+		};
+		6FD64EA0620FFF357B2713D1B5713EBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4437F947A52643EC223792032CBF53A5 /* Fire.png */,
+				7C49C7C8F37074739852CDDE28896BF5 /* Fragment.png */,
+				F569F542F13FE2DF84689C804587078F /* Smoke.png */,
+				453316CE8CFD55C93BBC33A6703BECB1 /* Sparkle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		837BDAAF11A9799BE4AD337C250D5EA0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBDCD003F321F0807200E3C6DA40AC13 /* LTMorphingLabel.modulemap */,
+				F6617A178919BF88B04456631C2CE1CE /* LTMorphingLabel-dummy.m */,
+				1D083565E45668BC50E5C108828819FC /* LTMorphingLabel-Info.plist */,
+				982EFFDF702A754B4ECA80708A71CC71 /* LTMorphingLabel-prefix.pch */,
+				B0C8B0E73A186D78944A9976189FDF5A /* LTMorphingLabel-umbrella.h */,
+				893199B7202918135CAD9E052FB3502F /* LTMorphingLabel.debug.xcconfig */,
+				4166530461566241163502DD0BF6844C /* LTMorphingLabel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LTMorphingLabel";
+			sourceTree = "<group>";
+		};
+		8C346748CA3399A11C8FBF44DE566128 /* Pods-CocoaPods */ = {
+			isa = PBXGroup;
+			children = (
+				CCC845779CB5E1F102C617C32A39D42A /* Pods-CocoaPods.modulemap */,
+				93BB1CDAA24C33DE7725550953DB11A3 /* Pods-CocoaPods-acknowledgements.markdown */,
+				C4BD62F917F543F1A58DE6258AE2075A /* Pods-CocoaPods-acknowledgements.plist */,
+				4D2FDB2AD982F5330254B87EC6FBAC9F /* Pods-CocoaPods-dummy.m */,
+				265A2FB75195067C659BF051330C9BFA /* Pods-CocoaPods-frameworks.sh */,
+				818A93B241FD584928DD63808BCA41BD /* Pods-CocoaPods-Info.plist */,
+				A46113E7D2B284418FDFBE5411379B11 /* Pods-CocoaPods-umbrella.h */,
+				D2C7DABF4783EE4F828C456C6A52096E /* Pods-CocoaPods.debug.xcconfig */,
+				6420358BF6A79DEF16B390985B127DE9 /* Pods-CocoaPods.release.xcconfig */,
+			);
+			name = "Pods-CocoaPods";
+			path = "Target Support Files/Pods-CocoaPods";
+			sourceTree = "<group>";
+		};
+		B6435CD4F13FA261D75EBA2A3B4410FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEDBC68DA4231AD41DD66C44FAB069B7 /* Jelly */,
+				1EF89C2ADA96DB267929D5A7D3214302 /* LTMorphingLabel */,
+				A5C9E01AAF42EFF307FEFBDA07A39C88 /* Pods-CocoaPods */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0E510803E8DC707786CB527C42E950F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C346748CA3399A11C8FBF44DE566128 /* Pods-CocoaPods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				0F9F7EEE485FABF4ED3874351716E914 /* Pods */,
+				B6435CD4F13FA261D75EBA2A3B4410FA /* Products */,
+				C0E510803E8DC707786CB527C42E950F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D144342268F18746A06DD0CE5BA0D122 /* LTMorphingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				32EE5AF640F1AFD407236748E45B68BD /* LTCharacterDiffResult.swift */,
+				73AE093CBC4FC9018F0885F38F84D661 /* LTCharacterLimbo.swift */,
+				EEE99847A977A2E4CD7116E3C6EB5567 /* LTEasing.swift */,
+				B815F099E3C4F90BA0C17B2BAAFCD5B4 /* LTEmitterView.swift */,
+				47C10F2F9B63E7415274D6FA2700387F /* LTMorphingEffect.swift */,
+				84F543E8835E59D2F8A57E5B504F8CD9 /* LTMorphingLabel.h */,
+				E2517F5CA43474B1B5E725698BF88D55 /* LTMorphingLabel.swift */,
+				7D7CCD69D148A5B788EF95433A6AF940 /* LTMorphingLabel+Anvil.swift */,
+				40A026DE46C9757CEB4E22D9FC1425B5 /* LTMorphingLabel+Burn.swift */,
+				5AECC574EA2DAE5DD2B0BACD1C8DA138 /* LTMorphingLabel+Evaporate.swift */,
+				7E54CF60600492D0015F3344FA9C6779 /* LTMorphingLabel+Fall.swift */,
+				016852B9FFC0FB04B8C779BEFB3CA9F7 /* LTMorphingLabel+Pixelate.swift */,
+				E383E1EA4ABD8CD4A88CA3CB6460E431 /* LTMorphingLabel+Sparkle.swift */,
+				76FF759400B8E415A61E76DB19400B99 /* LTStringDiffResult.swift */,
+				6FD64EA0620FFF357B2713D1B5713EBD /* Resources */,
+				837BDAAF11A9799BE4AD337C250D5EA0 /* Support Files */,
+			);
+			name = LTMorphingLabel;
+			path = LTMorphingLabel;
+			sourceTree = "<group>";
+		};
+		DE9C7DD412AA63E5827BA7E77C8C2876 /* Jelly */ = {
+			isa = PBXGroup;
+			children = (
+				2D72CA81C1ED954DCD4076A1160B3D58 /* AnimationCurve+AnimationOptions.swift */,
+				FD3E169C50832075301F2B6061523116 /* Animator.swift */,
+				210E447C2D8C8F01E07FAD424001C1B1 /* BackgroundStyle.swift */,
+				3FFF1AAF8B99D376C1C16146620C7024 /* CombinedTimingCurveProvider.swift */,
+				99101C4ADCB227073FF8992698698056 /* Constants.swift */,
+				CC81B0B48064F036A56817E1551A5F71 /* CoverAnimator.swift */,
+				1A7BB92D347827D54B828CF7D6F5A701 /* CoverPresentation.swift */,
+				FD6C8E03E066906BDADE031C81A24101 /* Deprecation.swift */,
+				4A263DD12DE8D79C335DC38F06AEE261 /* Direction.swift */,
+				FA773BB1218AEF9793E3C3CF78455A99 /* Direction+EdgeHelper.swift */,
+				F6D39537E55F6971E11DB54CEB89AEEE /* Direction+Orientation.swift */,
+				C8D9DB5A11FBA342E00F09F834C7D0AB /* DragMode.swift */,
+				D5B1590526615E65851FA89E9CDD619B /* Duration.swift */,
+				A7F98B22B105D905EE8BBA840357F02A /* FadeAnimator.swift */,
+				D7D43940B4756014983BC4F969F85F8F /* FadePresentation.swift */,
+				4BED6B18CF96F26191F23A79BF156821 /* HorizontalAlignment.swift */,
+				DB916F93AEE147682432533CD4578796 /* InteractionConfiguration.swift */,
+				FC7AA8EE0EB1334E0BD588B542B28C7A /* InteractionConfigurationProvider.swift */,
+				3F041199C261ADAB2CE2D67AFE5AC999 /* InteractionController.swift */,
+				01BE9ABCD0C70990D12B4F01BDEF4DA4 /* InteractionMode.swift */,
+				7066A5567881B1D2DD385CB2B1032DB5 /* LiveUpdateError.swift */,
+				FD65993B311F51E37DBF640F44B9700C /* Orientation.swift */,
+				E4889CB10C944EB033CCDA36F4B57283 /* Presentation.swift */,
+				6FC9A0C0A225195D4F22BEBC9093D306 /* PresentationAlignment.swift */,
+				1F5B7435CB6D5AE1537C4728F67FECC3 /* PresentationAlignmentProvider.swift */,
+				DDE21C6AA97A1FEA53B23C60B6C02078 /* PresentationAnimatorProvider.swift */,
+				EDC8DEF2BF94DF3B3FF935F7AC065D7A /* PresentationController.swift */,
+				6A1E9558B41769B7D003B9D4B99E552C /* PresentationDirectionDismissProvider.swift */,
+				C1E86640051BACD2FDA6D92FC8C77B92 /* PresentationDirectionShowProvider.swift */,
+				88A360FA05CFDC3A1BF9C5E3A77307D7 /* PresentationHeightProvider.swift */,
+				A5A6FEB1941142864C2B7B47224E56D2 /* PresentationInteractiveAnimatorProvider.swift */,
+				F488AAA0FE68E0BDB023F2FAA94648B6 /* PresentationMarginGuardsProvider.swift */,
+				95351ED45FDCFAB193EA805AEA3BA683 /* PresentationSingleSizeProvider.swift */,
+				62F8512AF4801D55CB246DAB40D3B8CA /* PresentationSize.swift */,
+				B02C4B2D6212F4D08883E267286F29CF /* PresentationSizeProtocol.swift */,
+				1BE5C6500D08F24F723A88F708EFF8AF /* PresentationSizeProvider.swift */,
+				A821A853367B84F0110F5071DF156E14 /* PresentationSpringProvider.swift */,
+				F7E3A13890DA173DA7CDBCA2F04E7C4A /* PresentationTiming.swift */,
+				244DB4061797E8BDEC8266E9A493127F /* PresentationTimingInformationProvider.swift */,
+				BEB303F905A301E4FC108CFCA90D0BA2 /* PresentationTimingProtocol.swift */,
+				C75E49E264B7F8EB46EF45FEFA0860E4 /* PresentationType.swift */,
+				794182A6B98E335E0703CB54F3F36AE2 /* PresentationUIConfiguration.swift */,
+				CFF5CC0B01DEB48E28BDEC04A3B91B44 /* PresentationUIConfigurationProvider.swift */,
+				0A11EBD8FBF9193354FF47C730412AC4 /* PresentationWidthProvider.swift */,
+				788F6D553B9228BDDB83521E8D68F5EC /* Size.swift */,
+				A7742343728535B5A62BCE31511D4652 /* Size+Equatable.swift */,
+				467034555824B93FDCB1761D43AEC265 /* SlideAnimator.swift */,
+				DEBE853D15569E611B55FFA0E862FC27 /* SlidePresentation.swift */,
+				93C5AC2152DAE70D5C4BDE468D4497C1 /* Spring.swift */,
+				2CD4A82F72DBE901959DB61139C2E8D8 /* Spring+Values.swift */,
+				22C763D045253FBA607F314F94A959BE /* UIView+RoundCorners.swift */,
+				94524532D463C250DA8E5743EB5A7248 /* UIViewControllerAnimatedTransitioning+Convenience.swift */,
+				F45727997EFD3C421D9185FF8266CE9B /* VerticalAlignment.swift */,
+				376F31FB2AD75A29F777F91061B8F7D5 /* ViewControllerSizeCalculator.swift */,
+				1A8DCED9BE4739DA272E0866026EF22B /* Support Files */,
+			);
+			name = Jelly;
+			path = Jelly;
+			sourceTree = "<group>";
+		};
+		F0A778C0229E9BF1FD97896B93F3272B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */,
+				9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */,
+				8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5ADA8FDCA17BFE3E199F434B9EA0C04B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EFBDE53F23A59F446A1A8C5046E1BFE /* Jelly-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22920296ABA256F5B57CA81F31C8F45 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907CA5C33ECFE28AA3AF50995F5FA91D /* LTMorphingLabel.h in Headers */,
+				A6C896CBD6AB4DA5E10369EAE910A1B8 /* LTMorphingLabel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4123A8E68B2D0252B02F6931038B5A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343EA4DDA39088744BFC8D4F9394D5F2 /* Pods-CocoaPods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		54C60F9B0F9BE0BE289A04A9AA3B6BB0 /* Jelly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99EF8848E264F2EF859528B892909B9D /* Build configuration list for PBXNativeTarget "Jelly" */;
+			buildPhases = (
+				5ADA8FDCA17BFE3E199F434B9EA0C04B /* Headers */,
+				5B8D2544C247E751442AE3EA4AD6CA4B /* Sources */,
+				94ACD5AC8FC48AEE99A7104C882E41A4 /* Frameworks */,
+				6A3D02629B14FEEFD5708EED9449B756 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jelly;
+			productName = Jelly;
+			productReference = EEDBC68DA4231AD41DD66C44FAB069B7 /* Jelly */;
+			productType = "com.apple.product-type.framework";
+		};
+		98B833C01757C7FDAC13783D2C5BF273 /* Pods-CocoaPods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C577B953B82FA51B509B1118C73C5C1 /* Build configuration list for PBXNativeTarget "Pods-CocoaPods" */;
+			buildPhases = (
+				E4123A8E68B2D0252B02F6931038B5A4 /* Headers */,
+				F707963B15E07F50B641DC24AE8F744E /* Sources */,
+				3A73E7B5426C71ED3E09DC2850216578 /* Frameworks */,
+				BB7A527809BAF5DB1F9FAE764A6E4DFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				248415E9ECDF3B8974F27E5D949D1788 /* PBXTargetDependency */,
+				277D76E93E319DCAD2E90C2FAE1347AA /* PBXTargetDependency */,
+			);
+			name = "Pods-CocoaPods";
+			productName = Pods_CocoaPods;
+			productReference = A5C9E01AAF42EFF307FEFBDA07A39C88 /* Pods-CocoaPods */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE08E97E291135F1A7FAF0D9D680D2BF /* LTMorphingLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91FA7CAA161BE1920A34155976F58064 /* Build configuration list for PBXNativeTarget "LTMorphingLabel" */;
+			buildPhases = (
+				A22920296ABA256F5B57CA81F31C8F45 /* Headers */,
+				E74B9C49ED7FFD4BFCFE62C33D32B783 /* Sources */,
+				E618A29D109D3AFE39DC034F15A382D3 /* Frameworks */,
+				62F05CB5B7540F3003BD9DB3643FCBD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LTMorphingLabel;
+			productName = LTMorphingLabel;
+			productReference = 1EF89C2ADA96DB267929D5A7D3214302 /* LTMorphingLabel */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B6435CD4F13FA261D75EBA2A3B4410FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54C60F9B0F9BE0BE289A04A9AA3B6BB0 /* Jelly */,
+				BE08E97E291135F1A7FAF0D9D680D2BF /* LTMorphingLabel */,
+				98B833C01757C7FDAC13783D2C5BF273 /* Pods-CocoaPods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62F05CB5B7540F3003BD9DB3643FCBD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4556C09111DFEC86B71688FBA2A80AC1 /* Fire.png in Resources */,
+				B441F46E4E3566BC30F8CE4EB841C792 /* Fragment.png in Resources */,
+				53B40877005BE473A1BEE043C1883E61 /* Smoke.png in Resources */,
+				BC6F3A12F6EE17E03560742B6BC2731C /* Sparkle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A3D02629B14FEEFD5708EED9449B756 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7A527809BAF5DB1F9FAE764A6E4DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B8D2544C247E751442AE3EA4AD6CA4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D545A1DE70DEE4282F055F7627725471 /* AnimationCurve+AnimationOptions.swift in Sources */,
+				9B3A729139AB19C7ECA1EA604D964375 /* Animator.swift in Sources */,
+				1C0A38BC989105616B195B414FA0F39E /* BackgroundStyle.swift in Sources */,
+				24DD55A150E75FBD793EE946683582F3 /* CombinedTimingCurveProvider.swift in Sources */,
+				33D8B85B84C0EA8292CAF04BE02EBD61 /* Constants.swift in Sources */,
+				D76C1D3D5D0915FBAA9D79F8F40A681D /* CoverAnimator.swift in Sources */,
+				AF00D622DE681EC50D491D55CF9A7DD0 /* CoverPresentation.swift in Sources */,
+				7A893026937CB10C2550BE7F18CB9D48 /* Deprecation.swift in Sources */,
+				22A16FB1168D7EFED59AD441317F3C88 /* Direction.swift in Sources */,
+				6D8C3CA4092398983AD2C9AF4F81753F /* Direction+EdgeHelper.swift in Sources */,
+				6240252898433DF3FF9FB057FA1CA827 /* Direction+Orientation.swift in Sources */,
+				FD5FACC8DD09EC39D5FF909EC4B15461 /* DragMode.swift in Sources */,
+				FC055631059A979810D539A998BC2B8C /* Duration.swift in Sources */,
+				D6643618DB5CB6F1E96F95067A0439C3 /* FadeAnimator.swift in Sources */,
+				B215D9357706C5F485A04ECF09C66E97 /* FadePresentation.swift in Sources */,
+				D1F16550F99EFFC0C96C6E6216A1BDC1 /* HorizontalAlignment.swift in Sources */,
+				FD4FF79F1E483BC743AA398E9EDEA2D7 /* InteractionConfiguration.swift in Sources */,
+				1991EDF2C64D1428D72EAFE7DAFB5D83 /* InteractionConfigurationProvider.swift in Sources */,
+				DB2CDA97AB034354500CB1D38A608AB8 /* InteractionController.swift in Sources */,
+				71C9FFCE97E47224660DD3D054CB5CB6 /* InteractionMode.swift in Sources */,
+				F63196912AFEE995EABFEF1E71FC4CBA /* Jelly-dummy.m in Sources */,
+				6B7DDA89E1307A42C192C4D3F7B0C101 /* LiveUpdateError.swift in Sources */,
+				6C0E0D1F17C861F79E4E647CD089BE25 /* Orientation.swift in Sources */,
+				095ED489B6740CD4239B6A172BDFA50D /* Presentation.swift in Sources */,
+				11DD09F60B8553BCF5A9E558FAD36CA5 /* PresentationAlignment.swift in Sources */,
+				58A4C1F9ADF7266E75BD3075176C2B47 /* PresentationAlignmentProvider.swift in Sources */,
+				0AE8606A6DA00F2166C23DDB78493AC4 /* PresentationAnimatorProvider.swift in Sources */,
+				F057615E25FE1768F405CD96AEB7B97B /* PresentationController.swift in Sources */,
+				E053C5257FC0C30E41AC5AF0A6BFDDC3 /* PresentationDirectionDismissProvider.swift in Sources */,
+				9DA31D1D003C2945F4BFF8F0D12A8AE1 /* PresentationDirectionShowProvider.swift in Sources */,
+				2CF727C8783657440270F9B56B2E6257 /* PresentationHeightProvider.swift in Sources */,
+				EDF619052F74FC01BEA22C5008FFEEB9 /* PresentationInteractiveAnimatorProvider.swift in Sources */,
+				411C1E70E700877983DF3BD19871AE83 /* PresentationMarginGuardsProvider.swift in Sources */,
+				734FC4A4BA723BF6CECE26C717E918DA /* PresentationSingleSizeProvider.swift in Sources */,
+				590C41931EADF309902E91207BE7C517 /* PresentationSize.swift in Sources */,
+				B93B233E217199DABF95DCBC76BD23E9 /* PresentationSizeProtocol.swift in Sources */,
+				887D87DFC268901E6544E06A9A92168D /* PresentationSizeProvider.swift in Sources */,
+				0582FDB5BCFC36CA937529C9F842408E /* PresentationSpringProvider.swift in Sources */,
+				63535EDAC39BCD8CEAFF4221E4C8DAF9 /* PresentationTiming.swift in Sources */,
+				BC48CDAD8DB34CA67EC38B3FBD852F9E /* PresentationTimingInformationProvider.swift in Sources */,
+				1EFCE5352F3D3295BAF50769C0E789E0 /* PresentationTimingProtocol.swift in Sources */,
+				BDCC7890FBA671224841C70F7828F6C4 /* PresentationType.swift in Sources */,
+				81BE96F1C87C3CF46044341BD4583F6D /* PresentationUIConfiguration.swift in Sources */,
+				8E20B3E17BD9456F100D5A59FB21F394 /* PresentationUIConfigurationProvider.swift in Sources */,
+				7FFE59A21E16EBD5C6CF197F55707F57 /* PresentationWidthProvider.swift in Sources */,
+				11B7D9594006964858CF355EF18BD8DC /* Size.swift in Sources */,
+				8D33791C687F487760ECA38DFED2F148 /* Size+Equatable.swift in Sources */,
+				FCA85199B90D41E0375A5868B219C631 /* SlideAnimator.swift in Sources */,
+				8D6ECC294090B63BA765BACEC1221A9F /* SlidePresentation.swift in Sources */,
+				40DDACE14CE2C8F5D9114EB8618E5173 /* Spring.swift in Sources */,
+				DB95D4D0DB5161577A694780CDF30F78 /* Spring+Values.swift in Sources */,
+				FA98C5FAE1D780048BA8308BEFB23ED3 /* UIView+RoundCorners.swift in Sources */,
+				A3704EBE8E333280224FA342C178072B /* UIViewControllerAnimatedTransitioning+Convenience.swift in Sources */,
+				15925F500F9F3C8F9E3C02F4B087AF71 /* VerticalAlignment.swift in Sources */,
+				337AD1E8F55EBC4CB49D325932849C66 /* ViewControllerSizeCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E74B9C49ED7FFD4BFCFE62C33D32B783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C98F88F43ED840BEE05B6A15A33AB43 /* LTCharacterDiffResult.swift in Sources */,
+				6354BF050131D8A69D79AC97CE299E69 /* LTCharacterLimbo.swift in Sources */,
+				7D9C47B129EA77ACF69FC5A67217367D /* LTEasing.swift in Sources */,
+				A5697D2D7D037B24B1439054E97FC009 /* LTEmitterView.swift in Sources */,
+				4FDC4DB2BFCDCECF3CD1DD4AD1151E6E /* LTMorphingEffect.swift in Sources */,
+				05F9FB633B239E485F01D601AECA6E2F /* LTMorphingLabel.swift in Sources */,
+				704494997F5F13A72A8DF65351F93452 /* LTMorphingLabel+Anvil.swift in Sources */,
+				CC3FE2BFC189D42744199C76783F7087 /* LTMorphingLabel+Burn.swift in Sources */,
+				9507728B497C72281A6478C92E314F66 /* LTMorphingLabel+Evaporate.swift in Sources */,
+				BF755AF4E8CF6B5928AE3657891659C4 /* LTMorphingLabel+Fall.swift in Sources */,
+				8857FD0B4987A603556ECD63B469812D /* LTMorphingLabel+Pixelate.swift in Sources */,
+				0E60F7FB92BE03B0DFC74AD3CDB50BE7 /* LTMorphingLabel+Sparkle.swift in Sources */,
+				5619946FB317E23FACEE53974C0744C5 /* LTMorphingLabel-dummy.m in Sources */,
+				5D062590800F6888D6A8219525CC7517 /* LTStringDiffResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F707963B15E07F50B641DC24AE8F744E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40817CB50941BC6979D586DE507624C9 /* Pods-CocoaPods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		248415E9ECDF3B8974F27E5D949D1788 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Jelly;
+			target = 54C60F9B0F9BE0BE289A04A9AA3B6BB0 /* Jelly */;
+			targetProxy = 3A08DC092C9EDCE2775C98AE17C54ECC /* PBXContainerItemProxy */;
+		};
+		277D76E93E319DCAD2E90C2FAE1347AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LTMorphingLabel;
+			target = BE08E97E291135F1A7FAF0D9D680D2BF /* LTMorphingLabel */;
+			targetProxy = C4DA6035DB926481E69294E4847C73A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09909ECBA13E8F70A928465E7F7A9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0AC3F9DB2C6E0E14958A20D037CD6C50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6420358BF6A79DEF16B390985B127DE9 /* Pods-CocoaPods.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods/Pods-CocoaPods-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods/Pods-CocoaPods.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0E34CAFD88C123A0A47B140F4AA23ED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C7DABF4783EE4F828C456C6A52096E /* Pods-CocoaPods.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods/Pods-CocoaPods-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods/Pods-CocoaPods.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DE0D8898245310716431F92FA4989FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4998388A4166354FC0BF42D6792F711A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893199B7202918135CAD9E052FB3502F /* LTMorphingLabel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LTMorphingLabel/LTMorphingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel.modulemap";
+				PRODUCT_MODULE_NAME = LTMorphingLabel;
+				PRODUCT_NAME = LTMorphingLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B19DDC9687CF59A5C2B2FC5A7DE44FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4166530461566241163502DD0BF6844C /* LTMorphingLabel.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LTMorphingLabel/LTMorphingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel.modulemap";
+				PRODUCT_MODULE_NAME = LTMorphingLabel;
+				PRODUCT_NAME = LTMorphingLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		634A2903738203C197B28CAF164C54F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F7B7380627B3FB572271ED410111D8D /* Jelly.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Jelly/Jelly-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jelly/Jelly-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Jelly/Jelly.modulemap";
+				PRODUCT_MODULE_NAME = Jelly;
+				PRODUCT_NAME = Jelly;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7C43465255EE25638CFC8F0DBBA6FD19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63699376B382D96C6388AE59FCF0AFF7 /* Jelly.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Jelly/Jelly-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jelly/Jelly-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Jelly/Jelly.modulemap";
+				PRODUCT_MODULE_NAME = Jelly;
+				PRODUCT_NAME = Jelly;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09909ECBA13E8F70A928465E7F7A9A92 /* Debug */,
+				2DE0D8898245310716431F92FA4989FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C577B953B82FA51B509B1118C73C5C1 /* Build configuration list for PBXNativeTarget "Pods-CocoaPods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E34CAFD88C123A0A47B140F4AA23ED4 /* Debug */,
+				0AC3F9DB2C6E0E14958A20D037CD6C50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91FA7CAA161BE1920A34155976F58064 /* Build configuration list for PBXNativeTarget "LTMorphingLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4998388A4166354FC0BF42D6792F711A /* Debug */,
+				4B19DDC9687CF59A5C2B2FC5A7DE44FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99EF8848E264F2EF859528B892909B9D /* Build configuration list for PBXNativeTarget "Jelly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634A2903738203C197B28CAF164C54F0 /* Debug */,
+				7C43465255EE25638CFC8F0DBBA6FD19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
