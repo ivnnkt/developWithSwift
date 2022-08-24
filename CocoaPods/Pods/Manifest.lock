@@ -1,0 +1,20 @@
+PODS:
+  - Jelly (2.2.2)
+  - LTMorphingLabel (0.9.3)
+
+DEPENDENCIES:
+  - Jelly (~> 2.2.2)
+  - LTMorphingLabel
+
+SPEC REPOS:
+  trunk:
+    - Jelly
+    - LTMorphingLabel
+
+SPEC CHECKSUMS:
+  Jelly: 0576a8fd3b3bea78f6c2d952acdc30b0835dda71
+  LTMorphingLabel: f2b256e4fe665aac27f0d0e8ccdcd79590f0cd70
+
+PODFILE CHECKSUM: ff7a9f306381f4a735ae708df87118962b0d7176
+
+COCOAPODS: 1.11.3
