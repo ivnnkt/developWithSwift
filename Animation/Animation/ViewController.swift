@@ -10,9 +10,33 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var animationView: UIView!
+    @IBOutlet weak var dropViewButton: UIButton!
+    
+    var animator: UIDynamicAnimator?
+    var gravity: UIGravityBehavior?
+    var collider: UICollisionBehavior?
+    var itemBehavior: UIDynamicItemBehavior?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        animator = UIDynamicAnimator(referenceView: view)
+        gravity = UIGravityBehavior()
+        collider = UICollisionBehavior()
+        itemBehavior = UIDynamicItemBehavior()
+        
+        collider?.translatesReferenceBoundsIntoBoundary = true
+        collider?.collisionMode = .everything
+        
+        collider?.addItem(dropViewButton)
+        
+        itemBehavior?.elasticity = 0.5
+        itemBehavior?.friction = 0.5
+        itemBehavior?.allowsRotation = true
+        
+        animator?.addBehavior(gravity!)
+        animator?.addBehavior(collider!)
+        animator?.addBehavior(itemBehavior!)
     }
 
     @IBAction func startTransform() {
@@ -26,6 +50,17 @@ class ViewController: UIViewController {
                 label.removeFromSuperview()
             }, completion: nil)
         }
+    }
+    
+    @IBAction func didTapDropView() {
+        let view = UIView(frame: CGRect(x: dropViewButton.frame.origin.x, y: 40, width: 30, height: 30))
+        view.backgroundColor = .darkGray
+        self.view.addSubview(view)
+        
+        itemBehavior?.addItem(view)
+        gravity?.addItem(view)
+        collider?.addItem(view)
+        
     }
     
     @IBAction func startMove() {

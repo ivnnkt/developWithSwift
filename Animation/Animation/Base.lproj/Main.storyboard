@@ -21,8 +21,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ak5-7F-DXi">
+                                <rect key="frame" x="174" y="433" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="didTapDropView" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Al-ik-fNP"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="b6T-BY-N43">
-                                <rect key="frame" x="104" y="44" width="207" height="31"/>
+                                <rect key="frame" x="103.5" y="44" width="207" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRs-25-bbe">
                                         <rect key="frame" x="0.0" y="0.0" width="94.5" height="31"/>
@@ -46,12 +54,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ak5-7F-DXi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7SW-GM-t79"/>
                             <constraint firstItem="b6T-BY-N43" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Pcq-8p-VeX"/>
                             <constraint firstItem="b6T-BY-N43" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W2f-ZU-WZp"/>
+                            <constraint firstItem="ak5-7F-DXi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="uMt-BJ-bl4"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="animationView" destination="crd-JF-N9V" id="7xM-6u-0mf"/>
+                        <outlet property="dropViewButton" destination="ak5-7F-DXi" id="0aM-Pa-bUk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
