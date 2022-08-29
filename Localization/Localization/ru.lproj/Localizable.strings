@@ -1,0 +1,13 @@
+ /* 
+  Localizable.strings
+  Localization
+
+  Created by Nikita on 28.08.2022.
+  
+*/
+
+
+"MY.LOCALIZED.TEXT" = "Моя локализированная строка!";
+"ViewController.label.text" = "Моя локализированная строка!";
+"ViewController.Alert.title" = "Это самодельное предупреждение!";
+"ViewController.Alert.button" = "Круто";

@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Mkg-BV-9gR"; */
+"Mkg-BV-9gR.text" = "Текст";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "RwJ-Dp-G2X"; */
+"RwJ-Dp-G2X.configuration.title" = "Кнопка";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RwJ-Dp-G2X"; */
+"RwJ-Dp-G2X.normalTitle" = "Кнопка";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "ZcV-pg-JcS"; */
+"ZcV-pg-JcS.configuration.title" = "Кнопка";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZcV-pg-JcS"; */
+"ZcV-pg-JcS.normalTitle" = "Кнопка";

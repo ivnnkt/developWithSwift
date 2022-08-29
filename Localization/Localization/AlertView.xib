@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlertView" customModule="Localization" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpz-rL-TRx">
+                    <rect key="frame" x="60" y="172" width="294" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVP-Qh-Mfy">
+                            <rect key="frame" x="0.0" y="0.0" width="294" height="152"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jp0-BY-IB3">
+                            <rect key="frame" x="8" y="152" width="278" height="40"/>
+                            <color key="backgroundColor" red="0.92133218049999999" green="0.67240863669999995" blue="0.60862158040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="apW-V2-8pz"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <connections>
+                                <action selector="closeView" destination="iN0-l3-epB" eventType="touchUpInside" id="bbO-r8-0Jw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemMintColor"/>
+                    <constraints>
+                        <constraint firstItem="Jp0-BY-IB3" firstAttribute="top" secondItem="cVP-Qh-Mfy" secondAttribute="bottom" id="4GZ-Fr-nfg"/>
+                        <constraint firstAttribute="trailing" secondItem="Jp0-BY-IB3" secondAttribute="trailing" constant="8" id="4iA-xI-ZbH"/>
+                        <constraint firstItem="cVP-Qh-Mfy" firstAttribute="leading" secondItem="lpz-rL-TRx" secondAttribute="leading" id="7HG-3k-nKD"/>
+                        <constraint firstItem="cVP-Qh-Mfy" firstAttribute="top" secondItem="lpz-rL-TRx" secondAttribute="top" id="9Hc-xl-m8S"/>
+                        <constraint firstAttribute="height" constant="200" id="EZV-fc-DZR"/>
+                        <constraint firstItem="Jp0-BY-IB3" firstAttribute="leading" secondItem="lpz-rL-TRx" secondAttribute="leading" constant="8" id="Fys-yV-D6b"/>
+                        <constraint firstAttribute="bottom" secondItem="Jp0-BY-IB3" secondAttribute="bottom" constant="8" id="MEY-k1-Lfw"/>
+                        <constraint firstAttribute="trailing" secondItem="cVP-Qh-Mfy" secondAttribute="trailing" id="oRl-pM-ezw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="lpz-rL-TRx" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="0.6" id="Gyl-iR-gZb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lpz-rL-TRx" secondAttribute="trailing" constant="60" id="l2b-WC-WDu"/>
+                <constraint firstItem="lpz-rL-TRx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="u68-Ij-yEJ"/>
+            </constraints>
+            <connections>
+                <outlet property="alertView" destination="lpz-rL-TRx" id="0PB-yN-eyp"/>
+                <outlet property="okButton" destination="Jp0-BY-IB3" id="QoJ-K8-FUI"/>
+                <outlet property="titleLabel" destination="cVP-Qh-Mfy" id="MCY-cM-ZGJ"/>
+                <outletCollection property="gestureRecognizers" destination="e4K-dM-1ba" appends="YES" id="3R0-D8-iWt"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="121"/>
+        </view>
+        <tapGestureRecognizer id="e4K-dM-1ba">
+            <connections>
+                <action selector="closeView" destination="iN0-l3-epB" id="751-a5-8hm"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
