@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Localization
+
+  Created by Nikita on 28.08.2022.
+  
+*/
+
+"MY.LOCALIZED.TEXT" = "My localized text!";
+"ViewController.label.text" = "My localized text!";
+"ViewController.Alert.title" = "It's custom Alert!";
+"ViewController.Alert.button" = "Cool";

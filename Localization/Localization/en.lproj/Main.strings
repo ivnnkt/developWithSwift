@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Mkg-BV-9gR"; */
+"Mkg-BV-9gR.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "RwJ-Dp-G2X"; */
+"RwJ-Dp-G2X.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RwJ-Dp-G2X"; */
+"RwJ-Dp-G2X.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "ZcV-pg-JcS"; */
+"ZcV-pg-JcS.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZcV-pg-JcS"; */
+"ZcV-pg-JcS.normalTitle" = "Button";
