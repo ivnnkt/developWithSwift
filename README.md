@@ -8,4 +8,10 @@ iOS app development with books: Develop in Swift. Fundamentals, Develop in Swift
 5. SpacePhoto - the simple app to try working with Web by API.
 6. MusicWireframe - the simple app to try animation
 7. OrderApp - the client-server app.
-8. networking - the client-server app (https://jsonplaceholder.typicode.com was used as a server) in this app I tried to use one of the best networking practices.
+
+# Pet-projects by other open sources
+1. Networking - the client-server app (https://jsonplaceholder.typicode.com was used as a server) in this app I tried to use one of the best networking practices.
+2. Animations - app to try some dynamic animation.
+3. CocoaPods - first step with CocoaPods.
+4. Localization - it's just simple mini project to try localization and try to do custom Alert.
+5. WorkingWithCoreData - try to work with CoreData
